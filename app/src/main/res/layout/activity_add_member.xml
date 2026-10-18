@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#E0F2FE">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Member"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#000080"
+            android:layout_marginTop="35dp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Member Name"
+            android:inputType="textPersonName"
+            android:textColorHint="#000080"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColorHint="#000080"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Membership Plan"
+            android:textStyle="bold"
+            android:textColor="#000080"/>
+
+        <RadioGroup
+            android:id="@+id/rgPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Monthly"
+                android:textColor="#000080"/>
+
+            <RadioButton
+                android:id="@+id/rbQuarterly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quarterly"
+                android:textColor="#000080"
+                />
+
+            <RadioButton
+                android:id="@+id/rbAnnual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annual"
+                android:textColor="#000080"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etMonthlyFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Monthly Fee (Rs.)"
+            android:inputType="numberDecimal"
+            android:textColorHint="#000080"/>
+
+        <EditText
+            android:id="@+id/etMonths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Number of Months"
+            android:inputType="number"
+            android:textColorHint="#000080"/>
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Start Date (dd/MM/yyyy)"
+            android:inputType="text"
+            android:textColorHint="#000080"/>
+
+        <CheckBox
+            android:id="@+id/cbTrainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Personal Trainer (+Rs. 1000)"
+            android:textColor="#000080"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Discount"
+            android:textStyle="bold"
+            android:textColor="#000080"/>
+
+        <SeekBar
+            android:id="@+id/seekDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount: 0%"
+            android:textColor="#000080"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Calculate Fee"
+            android:textColor="#000080"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:textColor="#000080"
+            android:text="Total Fee and Expiry Date will appear here"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Save Member"
+            android:textColor="#000080" />
+
+    </LinearLayout>
+</ScrollView>
